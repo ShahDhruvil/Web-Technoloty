@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		
+	body
+	{
+		background-image: url(bgimage.jpeg);
+		background-size: cover;
+	}
+	table
+	{
+		width: 100px;
+		border-spacing: 20px; 
+		border: 5px solid black;
+		border-radius: 30px;
+	}
+	tr
+	{
+		height: 40px;
+	}
+
+	</style>
+</head>
+<body>
+<form id="frm">
+	
+		
+		<table >
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="text" name="fname" id="fname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="text" name="lname" id="lname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:
+				</td>
+				<td>
+					<input type="password" name="password" id="pass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Bio:
+				</td>
+				<td>
+					<textarea name="bio" id="bio" rows="4" onblur="tx()" ></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Display Picture:
+				</td>
+				<td>
+					<input type="file" name="DP" accept="image/*" id="dp">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button id="gi">Get In</button>
+				</td>
+			</tr>
+		</table>
+</form>
+<p id="demo"></p>
+
+<script>
+	function tx()
+	{
+		var str = document.getElementById("bio");
+ 
+			alert("Bio is proper.")
+
+	}
+</script>
+
+</body>
+</html>
